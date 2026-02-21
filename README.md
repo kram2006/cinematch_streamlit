@@ -1,12 +1,12 @@
 # CineMatch | Streamlit Movie Recommendation Engine
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://cinematch-streamlit.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://cinematch-cosine.streamlit.app)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 CineMatch is a high-performance, content-based movie recommender system built with Streamlit. It combines advanced natural language processing (NLP) with an interactive web interface to demonstrate the power of vector similarity in information retrieval.
 
-**🚀 Live Streamlit App**: [https://cinematch-streamlit.streamlit.app](https://cinematch-streamlit.streamlit.app)
+**🚀 Live Streamlit App**: [https://cinematch-cosine.streamlit.app](https://cinematch-cosine.streamlit.app)
 
 ---
 
@@ -52,7 +52,7 @@ CineMatch is a high-performance, content-based movie recommender system built wi
 ### Streamlit Cloud (Recommended)
 The app is deployed on Streamlit Cloud and automatically updates when pushed to the `master` branch.
 
-**🚀 Live App**: [https://cinematch-streamlit.streamlit.app](https://cinematch-streamlit.streamlit.app)
+**🚀 Live App**: [https://cinematch-cosine.streamlit.app](https://cinematch-cosine.streamlit.app)
 
 ### Local Development
 To run the app locally:
