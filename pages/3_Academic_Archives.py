@@ -7,12 +7,10 @@ import cinematch_embed
 
 st.set_page_config(
     page_title="CineMatch | Research Portfolio & Recommendation Engine",
-    page_icon=str((Path(__file__).resolve().parent / "cm_favicon.svg")),
+    page_icon=str((Path(__file__).resolve().parent.parent / "cm_favicon.svg")),
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
-
-cinematch_embed.apply_streamlit_chrome_hiding_css()
-cinematch_embed.render(selected_tab="discovery", height=2600)
-
+cinematch_embed.apply_streamlit_chrome_hiding_css(hide_sidebar=False)
+cinematch_embed.render(selected_tab="archives", height=2600)
