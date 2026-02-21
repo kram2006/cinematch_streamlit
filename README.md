@@ -1,12 +1,12 @@
-# CineMatch | Research Portfolio & Recommendation Engine
+# CineMatch | Streamlit Movie Recommendation Engine
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?logo=github)](#)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://cinematch-streamlit.streamlit.app)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-CineMatch is a high-performance, content-based movie recommender system designed as a research portfolio. It combines advanced natural language processing (NLP) with a premium user interface to demonstrate the power of vector similarity in information retrieval.
+CineMatch is a high-performance, content-based movie recommender system built with Streamlit. It combines advanced natural language processing (NLP) with an interactive web interface to demonstrate the power of vector similarity in information retrieval.
 
-**Live Demo**: [https://kram2006.github.io/cinematch/](https://kram2006.github.io/cinematch/)
+**🚀 Live Streamlit App**: [https://cinematch-streamlit.streamlit.app](https://cinematch-streamlit.streamlit.app)
 
 ---
 
@@ -34,43 +34,47 @@ CineMatch is a high-performance, content-based movie recommender system designed
 ## Project Structure
 
 ```text
-├── index.html              # Main Static Site (GitHub Pages)
-├── app.js                  # Client-Side Application Logic (Core Engine)
-├── style.css               # Premium "Neon Tech" UI Design System
-├── data/
-│   ├── movies.json         # Exported Movie List (4,806 titles)
-│   ├── recommendations.json # Pre-computed Top-10 Recommendations
-│   ├── manifold.json       # 3D SVD Coordinates
-│   └── evaluation.json     # Pre-computed Benchmark Metrics
-├── app_utils.py            # API Hooks & Metadata Utilities
-├── config.py               # Configuration & API Key Rotation
-├── preprocess.py           # Research Pipeline (Vectorization -> SVD)
-├── evaluation.py           # Experimental Benchmarking Module
-├── explainability.py       # XAI Feature Attribution Module
-├── export_data.py          # Pickle -> JSON Data Export Tool
-├── similarity.pkl          # Pre-computed Similarity Matrix (Large)
-├── movie_list.pkl          # Processed Movie Metadata Pickle
-├── cv.pkl                  # Fitted Vectorizer Model
-└── requirements.txt        # Python Dependencies (for pipeline execution)
+├── streamlit_app.py        # Main Streamlit Application
+├── requirements.txt        # Python Dependencies (includes Streamlit)
+├── config.py              # TMDB API Configuration
+├── README.md              # Project Documentation
+└── data/                  # Essential JSON Data Files
+    ├── movies.json        # Movie Metadata (4,800+ titles)
+    ├── recommendations.json # Pre-computed Recommendations
+    ├── manifold.json      # 3D SVD Visualization Data
+    └── evaluation.json    # Benchmark Metrics
 ```
 
 ---
 
 ## Deployment
 
-### GitHub Pages (Live Site)
-The site is deployed automatically via GitHub Pages from the `main` branch. Simply push to `main` and the site updates.
+### Streamlit Cloud (Recommended)
+The app is deployed on Streamlit Cloud and automatically updates when pushed to the `master` branch.
 
-### Regenerating Data (Advanced)
-If you need to regenerate the recommendation data from scratch:
+**🚀 Live App**: [https://cinematch-streamlit.streamlit.app](https://cinematch-streamlit.streamlit.app)
 
-1. Download the [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata) and place CSVs in root.
-2. Run the research pipeline:
+### Local Development
+To run the app locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kram2006/cinematch_streamlit.git
+   cd cinematch_streamlit
+   ```
+
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-   python preprocess.py
-   python export_data.py
    ```
+
+3. Run the Streamlit app:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+### Environment Variables
+Set up TMDB API keys in `config.py` or as environment variables for poster fetching functionality.
 
 ---
 
